@@ -42,21 +42,14 @@ def petite
    my_hash= Hash[devise.zip(prix)]
    box = 6000
    box2 = 0 
-   box3=0   
 my_hash.each do |devise,prix|
    if box > prix.to_f
       #box=prix.to_f
-      
-      box3=prix
-      if box3<prix
-         box2=devise
+      box2=devise
       puts box2
    end  
 end
-
 end
-petite
-
 
 
 
